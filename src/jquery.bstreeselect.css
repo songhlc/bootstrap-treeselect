@@ -1,0 +1,86 @@
+/*!
+ * bootstrap-treetable - jQuery plugin for bootstrap view treeselect
+ *
+ * Copyright (c) 2016 songhlc
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Project home:
+ *   https://github.com/songhlc/bootstrap-treeselect
+ *
+ * Version:  1.0.0
+ * see http://songhlc:9091/cdn/js/plugins/bstreeselect/index.html for example
+ */
+.treeselect {
+    position: relative;
+    background-color: #FFF;
+}
+.treeselect .col-level-25{
+    width:25%;
+}
+.treeselect .col-level-17{
+    width:16.6666666%;
+}
+.treeselect .col-level-20{
+    width:20%;
+}
+.treeselect ul.category_list {
+    border: solid 1px #ddd;
+    float: left;
+    height: 200px;
+    margin: 0;
+    border-right: none;
+    padding: 0;
+    overflow: auto;
+}
+.treeselect .category_list li {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    cursor: pointer;
+    text-indent: 10px;
+}
+.treeselect .category_list li:hover{
+    background-color: #eee;
+}
+.treeselect .category_list li.active{
+    background-color: #00B500;
+    color:#FFF;
+}
+
+.treeselect .clearfix{
+    clear:both;
+}
+.treeselect .treedatactn{
+    border-right: solid 1px #ddd;
+    position: absolute;
+    width: 600px;
+    display: none;
+    background-color: #FFF;
+}
+.treeselect .form-control{
+    width:auto;
+    display: inline-block;
+}
+.treeselect .i-angle-down{
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    left: -20px;
+}
+.treeselect .i-caret-right{
+    margin-right: 5px;
+}
+.treeselect .operation{
+    border: solid 1px #ddd;
+    border-top: none;
+    border-right: none;
+    line-height: 28px;
+    padding: 5px;
+}
+.treeselect .clearselect{
+    margin-left: 10px;
+    cursor: pointer;
+    color: #337AB7;
+}

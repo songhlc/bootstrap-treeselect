@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>无标题</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <link href="../vendar/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendar/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/jquery.bstreeselect.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+    <style>
+
+    </style>
+</head>
+<body height="500px">
+<div class="container">
+    <div id="bs-treeetable" class="treetable">
+        加载数据中...
+    </div>
+    <div>test</div>
+</div>
+<script type="text/javascript" src="../vendar/jquery/1.9.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="../src/jquery.bstreeselelct.js"></script>
+<script type="text/javascript">
+    var data = [
+        {name:"test",id:1,pid:0,innercode:1},
+        {name:"test",id:12,pid:0,innercode:12},
+        {name:"test",id:13,pid:0,innercode:12},
+        {name:"test",id:14,pid:0,innercode:12},
+        {name:"test",id:15,pid:0,innercode:12},
+        {name:"test",id:16,pid:0,innercode:12},
+        {name:"test",id:17,pid:0,innercode:12},
+        {name:"test",id:18,pid:0,innercode:12},
+        {name:"test",id:19,pid:0,innercode:12},
+        {name:"test",id:20,pid:0,innercode:12},
+        {name:"test",id:21,pid:0,innercode:12},
+        {name:"test2",id:2,pid:0,innercode:2},
+        {name:"test3",id:3,pid:0,innercode:3},
+        {name:"test4",id:4,pid:1,innercode:4},
+        {name:"test5",id:5,pid:1,innercode:5},
+        {name:"test6",id:6,pid:4,innercode:6},
+        {name:"test7",id:7,pid:4,innercode:7},
+        {name:"test8",id:8,pid:4,innercode:8},
+        {name:"test9",id:9,pid:4,innercode:9},
+        {name:"test10",id:10,pid:6,innercode:10},
+        {name:"test11",id:11,pid:7,innercode:11},
+    ];
+    $("#bs-treeetable").bstreeselect({
+        data:data,
+        treenodeselect:function(data){
+            console.log(JSON.stringify(data));
+        },
+        onclear:function(){
+            console.log("clear");
+        }
+    });
+</script>
+</body>
+</html>
