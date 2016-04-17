@@ -37,3 +37,5 @@
 		{name:"test10",id:10,pid:6,innercode:10},
 		{name:"test11",id:11,pid:7,innercode:11},
     ];
+
+####[demo地址](http://songjl.github.io/demo/bstreeselectdemo.html)
