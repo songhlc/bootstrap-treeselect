@@ -13,6 +13,7 @@
     });
 ###对应data数据格式(data format)
 注意按照pid升序排序(data order by pid asc)
+
     var data = [
 		{name:"test",id:1,pid:0,innercode:1},
 		{name:"test",id:12,pid:0,innercode:12},
