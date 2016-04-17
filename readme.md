@@ -1,7 +1,7 @@
 #Bootstrap-treeselect
-#基于boostrap和jquery的下拉树控件
+###基于boostrap和jquery的下拉树控件
 
-##使用方式(how to use)
+###使用方式(how to use)
     $("#bs-treeetable").bstreeselect({
         data:data,//tree data order by parentid
 		treenodeselect:function(data){
@@ -11,8 +11,8 @@
 			console.log("clear");
 		}
     });
-##对应data数据格式(data format)
-###注意按照pid升序排序(data order by pid asc)
+###对应data数据格式(data format)
+注意按照pid升序排序(data order by pid asc)
     var data = [
 		{name:"test",id:1,pid:0,innercode:1},
 		{name:"test",id:12,pid:0,innercode:12},
