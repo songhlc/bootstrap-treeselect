@@ -109,6 +109,10 @@
         element.delegate(".treeselect input","focus",function(){
             element.find(".treedatactn").css("display","block");
         });
+        //保证点击下拉箭头时也能触发操作
+        element.delegate(".treeselect .i-angle-down","click",function(){
+            element.find(".treedatactn").css("display","block");
+        });
         element.delegate(".treeselect input","blur",function(){
             if(_timeout){
                 clearTimeout(_timeout);
